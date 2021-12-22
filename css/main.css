@@ -1,0 +1,405 @@
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 84px;
+    background-color: #ecf2ef;
+    z-index: 10;
+}
+.container-header{
+    height:100%;
+    line-height: 22px;
+    margin: 0 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+.logo{
+    flex: 1;
+    font-size: 20px;
+    line-height: 22px;
+    text-align: left;
+}
+.logo-link{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+.menu{
+    display: flex;
+    flex: 2.5;
+    flex-wrap: nowrap;
+}
+.list-menu{
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    flex-direction: row;
+}
+.item-menu{
+    margin-right: 24px;
+}
+.item-menu__link{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: .02em;
+    color: #505560;
+    position: relative;
+}
+.btn {
+     text-decoration: none;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: 20px;
+     border-radius: 4px;
+     margin-right: 12px;
+     padding: 9px 12px;
+    }
+.btn-outline-green {
+    background: #fff;
+    border: 2px solid #2fb388;
+    padding: 8px 12px;
+    }
+.btn-green {
+    background-color: #2fb388;
+    color: #fff;
+}
+.btn-gradient{
+    background-color: #079769;
+    color: #fff;
+}
+.btn.btn-outline-green:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgba(47,179,136,.2);
+    box-shadow: 0 5px 15px rgba(47,179,136,.2);
+    text-decoration: none;
+    background-color: #2fb388;
+    background-size: 100%;
+    border-color: #079769;
+}
+.btn.btn-green:hover {
+    color: #fff;
+    -webkit-box-shadow: 0 5px 15px rgba(47,179,136,.2);
+    box-shadow: 0 5px 15px rgba(47,179,136,.2);
+    text-decoration: none;
+    background-color: #2fb388;
+    background-size: 100%;
+}
+.btn.btn-gradient:hover {
+    background: #1d7a5d;
+    color: #fff;
+    background-image: -webkit-radial-gradient(circle,transparent 1%,#298467 1%);
+    background-image: -o-radial-gradient(circle,transparent 1%,#298467 1%);
+    background-image: radial-gradient(circle,transparent 1%,#298467 1%);
+    background-position: center;
+    background-size: 15000%;
+}
+.slider{
+    position: relative;
+    width: 100%;
+    margin-top: 84px;
+    height: 770px;
+}
+.box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.review-box{
+    width: 100%;
+    transition: transform 0.3s linear;
+    display: flex;
+}
+.slider-1{
+    background-color: rgb(47,179,136);
+}
+.slider-2{
+    background-color: rgb(0,43,88);
+}
+.box-item.slider-3{
+    background: url(https://smed.vn/Template/image/slider/slider-3/bg-1.jpg);
+}
+.box-item.slider-4{
+    background: url(https://smed.vn/Template/image/slider/slider-4/bg-1.jpg);
+}
+.box-item{
+    width: 100%;
+    height: 100%;
+    flex: 1 0 100%;
+    padding:  10px;
+}
+.box-text{
+    transform: translate(5%,50%);
+}
+.text-title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-bottom: 20px;
+    max-width: 505px;
+}
+.text-title-content {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 1px;
+    color: #e9edec;
+    margin-bottom: 40px;
+    max-width: 457px;
+}
+.box-img{
+    position: absolute;
+    width: 62%;
+    height: 770px;
+    z-index: 0;
+    top: 0;
+    right: 0;
+}
+.img-2,.img-3,.img-4{
+    display: none;
+}
+.box-img.active1{
+    position: absolute;
+    width: 60%;
+    height: 770px;
+    z-index: 0;
+    top: 100px;
+    right: 0px;
+}
+.box-img.active1 .slider-img{
+    width: 50%;
+}
+.slider-img{
+    width: 100%;
+}
+.slider-img__item1{
+    position: absolute;
+    bottom: 250px;
+    left: -120px;
+}
+.slider-img__item2{
+    position: absolute;
+    top: 100px;
+    left: -80px;
+}
+.slider-img__item3{
+    position: absolute;
+    top: 100px;
+    right: 250px;
+}
+.box-img__item{
+    display: none;
+    width: 62%;
+    height: 770px;
+    z-index: 0;
+    top: 0;
+}
+.box-img.active1 .box-img__item{
+    display: block;
+}
+.animation-img{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-name: fadeInRight;
+}
+.animation-text__heading{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.1s;
+    animation-name: fadeInRight;
+}
+.animation-text__content{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.3s;
+    animation-name: fadeInRight;
+}
+.animation-text__link{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.5s;
+    animation-name: fadeInRight;
+}
+.animation-img-item{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 1s;
+    animation-name: fadeInRight;
+}
+.dots-control{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dot-item{
+    margin: 0 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgba(126, 121, 121, 0.8);
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.active{
+    background-color: rgba(255, 248, 248, 0.8);
+}
+.banner{
+    position: relative;
+    background: linear-gradient(180deg,rgba(225,244,238,0) 0%,#cdeae1 100%);
+    padding: 80px 0;
+    text-align: center;
+    overflow: hidden;
+    z-index: 1;
+}
+.banner-content{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.banner-content__heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    color: #2f4858;
+    margin-bottom: 12px;
+}
+.banner-content__para{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #677987;
+    margin-bottom: 30px;
+}
+.banner-img{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.banner-img img{
+    max-width: 100%;
+    vertical-align: middle;
+    border-style: none;
+}
+.animation-fadeInUp{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.1s; 
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.benefit{
+    padding: 90px 0 50px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: #fbfbfb;
+    z-index: 1;
+}
+.benefit-heading{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+    text-transform: uppercase;
+    color: #2f4858;
+    margin-bottom: 12px
+}
+.benefit-para{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 20px;
+    color: #9baebc;
+    margin-bottom: 40px
+}
+.benefit-container{
+    margin-top: 15px;
+    width: 100%;
+    margin: 0 auto;
+}
+.benefit-list{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.benefit-item{
+    display: flex;
+    justify-content: center;
+    flex: 1 0 33.3333%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.benefit-item a{
+    text-align: center;
+    background: #fff;
+    padding: 30px 24px;
+    min-height: 233px;
+    margin-bottom: 30px;
+    outline: 0 ;
+    text-decoration: none;
+    cursor: pointer;
+    color: #505560;
+}
+.benefit-item h3{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2f4858;
+    margin: 15px 0px;
+}
+.benefit-item p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #677987;
+}
+.hover-transform:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
+.ct-img {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+}
+.animate__fadeInUp{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.3s; 
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.ct-img.animate__fadeInUp{
+    visibility: visible; 
+    animation-duration: 1500ms; 
+    animation-delay: 0.6s; 
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}

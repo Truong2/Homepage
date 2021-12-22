@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,400&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header class="header">
+        <div class="container-header">
+            <div class="logo">
+                <a href="" class="logo-link">
+                    <img src="./img/logo.png" alt="hần mềm quản lý phòng tiêm chủng dịch vụ">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="list-menu">
+                    <li class="item-menu">
+                        <a class="item-menu__link" href="#trangchu">Trang chủ</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item-menu__link" href="#tinhnang">Tính năng</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item-menu__link" href="#banggia">Bảng giá</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item-menu__link" href="#ungdung">Ứng dụng di động</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item-menu__link" href="#lienhe">Liên hệ</a>
+                    </li>
+                </ul>
+                <a href="#" class="btn btn-outline-green ">Đăng nhập</a>
+                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-green ">Đăng ký dùng thử</a>
+            </div>
+        </div>
+    </header>
+    <div class="slider">
+        <div class="box">
+            <div class="review-box">
+                <div class="box-item slider-1">
+                    <div class="box-text">
+                        <h2 class="text-title animation-text__heading" data-wow-delay="0.1s" data-wow-duration="1500ms" title="Giải pháp điện toán đám mây quản lý tối ưu cho các cơ sở tiêm chủng dịch vụ" >Giải pháp điện toán đám mây quản lý tối ưu cho các cơ sở tiêm chủng dịch vụ</h2>
+                        <p class="text-title-content animation-text__content" data-wow-delay="0.3s" data-wow-duration="1500ms" title="Quản lý toàn diện quy trình TCDV tại các cơ sở tiêm, đáp ứng nhu cầu quản trị vận hành, đồng thời tăng hiệu suất kinh doanh và chăm sóc khách hàng." >Quản lý toàn diện quy trình TCDV tại các cơ sở tiêm, đáp ứng nhu cầu quản trị vận hành, đồng thời tăng hiệu suất kinh doanh và chăm sóc khách hàng.</p>
+                        <a href="#" class="btn btn-gradient animation-text__link ig-animation" data-wow-delay="0.5s" data-wow-duration="1500ms" data-toggle="modal" data-target="#myModal" title="Dùng thử miễn phí" tabindex="-1">Dùng thử miễn phí</a>
+                    </div>
+                    <div class="box-img">
+                        <img src="./img/bg-02.png" class="slider-img animation-img" alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCare" >
+                    </div>
+                </div>
+                <div class="box-item slider-2">
+                    <div class="box-text">
+                        <h2 class="text-title ig-2" data-wow-delay="0.1s" data-wow-duration="1500ms" title="Quản lý hiệu quả và chuỗi phòng tiêm">Quản lý <span class="cl-blue">hiệu quả</span> phòng tiêm và chuỗi phòng tiêm</h2>
+                        <p class="text-title-content ig-2" data-wow-delay="0.3s" data-wow-duration="1500ms" title="Linh hoạt trong quản lý cơ sở đơn lẻ và quản lý chuỗi cơ sở, tối ưu hóa chi phí đầu tư và nhanh chóng triển khai tại cơ sở mới." style="visibility: visible; animation-duration: 1500ms; animation-delay: 0.3s; animation-name: none;">Linh hoạt trong quản lý cơ sở đơn lẻ và quản lý chuỗi cơ sở, tối ưu hóa chi phí đầu tư và nhanh chóng triển khai tại cơ sở mới.</p>
+                        <a href="#" class="btn btn-gradient ig-animation" data-wow-delay="0.5s" data-wow-duration="1500ms" data-toggle="modal" data-target="#myModal" title="Dùng thử miễn phí" tabindex="-1" >Dùng thử miễn phí</a>
+                    </div>
+                    <div class="box-img img-2">
+                        <img src="./img/Slider-2.png" class="slider-img "  alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCart">
+                    </div>
+                </div>
+                <div class="box-item slider-3"> 
+                    <div class="box-text">
+                        <h2 class="text-title ig-3" data-wow-delay="0.1s" data-wow-duration="1500ms" title="" ><span class="cl-blue">Đồng bộ</span> dữ liệu với <br> Hệ thống Tiêm chủng quốc gia</h2>
+                        <p class="text-title-content ig-3" data-wow-delay="0.3s" data-wow-duration="1500ms" title="Linh hoạt trong quản lý cơ sở đơn lẻ và quản lý chuỗi cơ sở, tối ưu hóa chi phí đầu tư và nhanh chóng triển khai tại cơ sở mới."> nhật lịch sử tiêm chủng và quản lý thông tin khách hàng hiệu quả bằng mã tiêm chủng quốc gia.</p>
+                        <a href="#" class="btn btn-gradient ig-animation" data-wow-delay="0.5s" data-wow-duration="1500ms" data-toggle="modal" data-target="#myModal" title="Dùng thử miễn phí" tabindex="-1" >Dùng thử miễn phí</a>
+                    </div>
+                    <div class="box-img img-3">
+                        <img src="./img/Slider-3.png" class="slider-img "  alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCart">
+                    </div>
+                </div>
+                <div class="box-item slider-4">
+                    <div class="box-text">
+                        <h2 class="text-title " data-wow-delay="0.1s" data-wow-duration="1500ms" title="" >Tối ưu <span class="cl-blue">trải nghiệm</span> người dùng nhờ ứng dụng SmedCare</h2>
+                        <p class="text-title-content " data-wow-delay="0.3s" data-wow-duration="1500ms" title="Quản lý toàn diện quy trình TCDV tại các cơ sở tiêm, đáp ứng nhu cầu quản trị vận hành, đồng thời tăng hiệu suất kinh doanh và chăm sóc khách hàng." >Quản lý toàn diện quy trình TCDV tại các cơ sở tiêm, đáp ứng nhu cầu quản trị vận hành, đồng thời tăng hiệu suất kinh doanh và chăm sóc khách hàng.</p>
+                        <a href="#" class="btn btn-gradient ig-animation " data-wow-delay="0.5s" data-wow-duration="1500ms" data-toggle="modal" data-target="#myModal" title="Dùng thử miễn phí" tabindex="-1" >Dùng thử miễn phí</a>
+                    </div>
+                    <div class="box-img img-4 active1">
+                        <img src="./img/phone.png" class="slider-img slider-img-4 " alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng">
+                        <div class="box-img__item ">
+                            <img src="./img/bg-2.png" class="slider-img__item1 " data-wow-delay="0.9s" data-wow-duration="1500ms" alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCare">
+                            <img src="./img/bg-3.png" class="slider-img__item2 " data-wow-delay="0.9s" data-wow-duration="1500ms" alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCare">
+                            <img src="./img/bg-4.png" class="slider-img__item3" data-wow-delay="0.9s" data-wow-duration="1500ms" alt="Tối ưu trải nghiệm người dùng nhờ ứng dụng SmedCare">
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>
+            <div class="slider-control" style="display:none;">
+                <div class="btn btn-next">
+                    <i class="fas fa-arrow-right"></i>
+                </div>
+            </div>
+            <div class="dots-control">
+                <div class="dot-item active" >
+                </div>
+                <div class="dot-item">
+                </div>
+                <div class="dot-item">
+                </div>
+                <div class="dot-item">
+                </div>
+            </div>
+    </div>
+    <div class="banner">
+        <div class="banner-container">
+            <div class="banner-content">
+                <h2 class="banner-content__heading animation-fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms" title="" ><span class="span-tt">Chúng Tôi</span> Luôn Đem Lòng Tin Đến Mọi Nhà</h2>
+                <p class="banner-content__para animation-fadeInUp" data-wow-delay="0.3s" data-wow-duration="1500ms" title="" >Đã có mặt tại các xã trên địa bàn tỉnh Hà Nội</p>
+                <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-green btn-animation animation-fadeInUp" title="" data-wow-delay="0.5s" data-wow-duration="1500ms" >Đăng ký dùng thử</a>
+            </div>
+            <div class="banner-img animation-fadeInUp" data-wow-delay="0.5s" data-wow-duration="1500ms" >
+                <img src="./img/counter.png" class="">
+            </div>
+        </div>
+       
+    </div>
+    <div id="benefit" class="benefit">
+        <h2 class="benefit-heading" data-wow-delay="0.1s" data-wow-duration="1500ms">Lợi ích của Phần mềm tiêm chủng SMED</h2>
+    
+        <p class="benefit-para " data-wow-delay="0.3s" data-wow-duration="1500ms" >Hãy để chúng tôi đồng hành cùng thành công của bạn</p>
+    
+        <div class="benefit-container">
+                <div class="benefit-list " data-wow-delay="0.1s" data-wow-duration="1500ms">
+                    <div class="benefit-item hover-transform">
+                        <a href="#">
+                            <img src="./img/icon-1.png" alt="Đầy đủ quy trình nghiệp vụ">
+                            <h3>Đầy đủ quy trình nghiệp vụ</h3>
+                            <p>Đáp ứng đầy đủ quy trình tiêm của cơ sở, giảm thiểu thao tác người dùng</p>
+                        </a>
+                    </div>
+                    <div class="benefit-item hover-transform ">
+                        <a href="#">
+                            <img src="./img/icon-2.png" alt="Quản lý và phân quyền">
+                            <h3>Quản lý và phân quyền</h3>
+                            <p>Quản lý và phân quyền chi tiết theo vai trò từng bộ phận, giúp cơ sở hoạt động hiệu quả</p>
+                        </a>
+                    </div>
+                    <div class="benefit-item hover-transform ">
+                        <a href="#">
+                            <img src="./img/icon-3.png" alt="Dễ dàng mở rộng">
+                            <h3>Dễ dàng mở rộng</h3>
+                            <p>Dễ dàng mở rộng các dịch vụ kết nối (thanh toán, Hóa đơn điện tử, SMS…)</p>
+                        </a>
+                    </div>
+                    <div class="benefit-item hover-transform ">
+                        <a href="#">
+                            <img src="./img/icon-4.png" alt="Báo cáo thống kê">
+                            <h3>Báo cáo thống kê</h3>
+                            <p>Tổng hợp đầy đủ các báo cáo doanh thu, kho... theo thời gian thực</p>
+                        </a>
+                    </div>
+                    <div class="benefit-item hover-transform ">
+                        <a href="#">
+                            <img src="./img/icon-5.png" alt="Nền tảng Cloud">
+                            <h3>Nền tảng Cloud</h3>
+                            <p class="d-none d-lg-block">Nền tảng Cloud an toàn, bảo mật, khả năng mở rộng nhanh chóng, không mất phí cài đặt, bảo trì</p>
+                            <p class="d-block d-lg-none">Nền tảng Cloud an toàn, bảo mật, không mất phí cài đặt, bảo trì</p>
+                        </a>
+                    </div>
+                    <div class="benefit-item hover-transform ">
+                        <a href="#">
+                            <img src="./img/icon-6.png" alt="Tối ưu hóa chi phí">
+                            <h3>Tối ưu hóa chi phí</h3>
+                            <p>Tối ưu hóa chi phí đầu tư, triển khai nhanh chóng tại cơ sở mới</p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+        <div class="ct-img " data-wow-delay="0.5s" data-wow-duration="1500ms">
+            <img src="./img/benefit.png" class="img-benefit " alt="Lợi ích của Phần mềm tiêm chủng SMED">
+        </div>
+    </div>
+    <script src="./js/slider.js"></script>
+</body>
+</html>
